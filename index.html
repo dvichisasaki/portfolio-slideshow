@@ -4,81 +4,90 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio/slideshow</title>
+  <title>Portfolio - Daichi Sasaki</title>
   <link rel="icon" href="img/favicon.png">
   <script src="https://kit.fontawesome.com/7e512de6fa.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- ヘッダー -->
   <header>
     <div class="header-title">
-        <h2>DAICHI SASAKI</h2>
-        <h2>STUDIO SASAKI</h2>
+      <h2>DAICHI SASAKI</h2>
+      <h2>PORTFOLIO</h2>
     </div>
-
-
     <div class="sp-menu">
-        <i class="fa-solid fa-bars" id="open"></i>
+      <i class="fa-solid fa-bars" id="open"></i>
     </div>
-
-    
   </header>
 
-  <section class="container">
-
-    <div class="overlay">
-        <div class="remove-menu">
-            <i class="fa-solid fa-xmark" id="close"></i>
-        </div>
-
-        
-            <nav>
-                <ul>
-                    <li><a href="index.html">Welcome</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="">STUDIO SASAKI</a></li>
-                </ul>
-            </nav>
-        
+  <!-- ナビゲーション -->
+  <div class="overlay">
+    <div class="remove-menu">
+      <i class="fa-solid fa-xmark" id="close"></i>
     </div>
-        <div class="sns">
-            <nav>
-                <ul>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">Twitter</a></li>
-                    <li><a href="">Youtube</a></li>
-                </ul>
-            </nav>
-        </div>
-    
-    <div class="hero">
-        <div>
-            <h1 class="res-title">DAICHI SASAKI</h1>
-        </div>
-        <img src="361CFE98-FB8A-4FD2-9728-AC25903EA3D2_1_105_c.jpeg"" class="current">
-        <img src="7F27AF72-4D17-4D65-8C05-7E8E4C068C4F_1_105_c.jpeg" alt="">
-        <img src="BCC0A80E-2485-4D5B-AD00-36BBDE87452E_1_105_c.jpeg" alt="">
-        <img src="03480B27-872D-4ABD-9F2A-53D537FB5E24_1_105_c.jpeg" alt="">
-    </div>
+    <nav>
+      <ul>
+        <li><a href="#welcome">Welcome</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 
-    <div class="contacts">
-        <nav class="contact">
-            <ul>
-                <li><a href="">E-Mail</a></li>
-                <li><a href="">Linkedin</a></li>
-                <li><a href="">Behance</a></li>
-            </ul>
-        </nav>
+  <!-- Welcome -->
+  <section id="welcome" class="hero">
+    <div>
+      <h1 class="res-title">DAICHI SASAKI</h1>
+      <p class="sub-title">Web Developer / Designer</p>
     </div>
-  </section>  
+    <img src="361CFE98-FB8A-4FD2-9728-AC25903EA3D2_1_105_c.jpeg" class="current" alt="Work1">
+    <img src="7F27AF72-4D17-4D65-8C05-7E8E4C068C4F_1_105_c.jpeg" alt="Work2">
+    <img src="BCC0A80E-2485-4D5B-AD00-36BBDE87452E_1_105_c.jpeg" alt="Work3">
+    <img src="03480B27-872D-4ABD-9F2A-53D537FB5E24_1_105_c.jpeg" alt="Work4">
+  </section>
 
+  <!-- About -->
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>こんにちは、佐々木大地です。フロントエンド開発とデザインを中心に活動しています。HTML、CSS、JavaScriptを用いたコーディングに加え、クリエイティブな写真作品の制作も行っています。</p>
+    <p>シンプルで直感的なデザインを大切にし、ユーザーに伝わる体験を提供することを目指しています。</p>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="container">
+    <h2>Portfolio</h2>
+    <div class="works">
+      <div class="work-item">
+        <img src="361CFE98-FB8A-4FD2-9728-AC25903EA3D2_1_105_c.jpeg" alt="Work1">
+        <p>写真販売サイト（HTML / CSS / JS）</p>
+        <a href="https://dvichisasaki.github.io/photostoresite/" target="_blank">View Project</a>
+      </div>
+      <div class="work-item">
+        <img src="BCC0A80E-2485-4D5B-AD00-36BBDE87452E_1_105_c.jpeg" alt="Work2">
+        <p>スライドポートフォリオ（HTML / CSS / JS）</p>
+        <a href="https://dvichisasaki.github.io/portfolio-slideshow/" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <ul>
+      <li>Email: <a href="mailto:yourmail@example.com">yourmail@example.com</a></li>
+      <li>GitHub: <a href="https://github.com/dvichisasaki" target="_blank">github.com/dvichisasaki</a></li>
+      <li>LinkedIn: <a href="#">Your LinkedIn</a></li>
+    </ul>
+  </section>
+
+  <!-- フッター -->
   <footer>
-        <h2 class="footer-title-1">ProduceByDaichiSasaki</h2>
-        <h3 class="footer-title-2">DAICHISASAKI</h3>
+    <h2 class="footer-title-1">ProduceByDaichiSasaki</h2>
+    <h3 class="footer-title-2">DAICHISASAKI</h3>
   </footer>
-
 
   <script src="main.js"></script>
 </body>
